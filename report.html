@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAccess - Reports</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <!-- Navigation Bar (Unchanged) -->
+    <nav>
+        <h1>EduAccess - Reports</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="learning-hub.html">📖 Learning Hub</a></li>
+            <li><a href="scholarship.html">🎓 Scholarships</a></li>
+            <li><a href="student.html">🤝 Student Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>📊 Upload Data & Generate Report</h2>
+        <p>Upload a data file before generating a report.</p>
+
+        <!-- Upload Report Section -->
+        <div class="upload-section">
+            <h3>📤 Upload Your File</h3>
+            <input type="file" id="upload-report" accept=".csv,.xlsx,.pdf,.doc,.docx">
+            <button class="upload-btn" onclick="uploadReport()">Upload</button>
+            <p id="upload-status">No file uploaded.</p>
+        </div>
+
+        <!-- Generate Report Button (Initially Disabled) -->
+        <button class="generate-btn" id="generate-btn" disabled>📄 Generate Report</button>
+    </div>
+
+    <!-- Footer (Unchanged) -->
+    <footer>
+        <p>© 2024 EduAccess - NoDropoutZone. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function uploadReport() {
+            let fileInput = document.getElementById("upload-report");
+            let uploadStatus = document.getElementById("upload-status");
+            let generateBtn = document.getElementById("generate-btn");
+
+            if (fileInput.files.length === 0) {
+                uploadStatus.innerHTML = "❌ No file chosen.";
+                uploadStatus.style.color = "red";
+                return;
+            }
+
+            let file = fileInput.files[0];
+            uploadStatus.innerHTML = `✅ Successfully uploaded: ${file.name}`;
+            uploadStatus.style.color = "green";
+
+            // Enable Generate Report Button
+            generateBtn.disabled = false;
+            generateBtn.classList.add("enabled");
+        }
+    </script>
+</body>
+</html>
