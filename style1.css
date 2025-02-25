@@ -1,0 +1,34 @@
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.video-container {
+    margin: 20px auto;
+    max-width: 560px;
+}
+
+.resources {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.resources a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.resources a:hover {
+    color: #0056b3;
+}
