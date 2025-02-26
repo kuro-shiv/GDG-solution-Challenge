@@ -101,6 +101,7 @@ nav {
 /* ====== Notice Board ====== */
 .notice-board {
     position: fixed;
+    padding-top: 30px;
     top: 50%;
     right: 20px;
     width: 250px;
@@ -112,6 +113,7 @@ nav {
     text-align: center;
 }
 
+
 .notice-line {
     border: 0;
     height: 2px;
@@ -120,8 +122,8 @@ nav {
 }
 
 .notice-content {
-    height: 100px;
-    overflow: hidden;
+    height: 120px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     animation: scrollUp 9s linear infinite;
@@ -129,7 +131,7 @@ nav {
 
 @keyframes scrollUp {
     10% { transform: translateY(0%); }
-    100% { transform: translateY(-100%); }
+    100% { transform: translateY(-50%); }
 }
 
 /* ====== Chatbot Button (Above Footer) ====== */
