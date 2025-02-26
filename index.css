@@ -129,7 +129,7 @@ nav {
 
 @keyframes scrollUp {
     10% { transform: translateY(0%); }
-    100% { transform: translateY(-70%); }
+    100% { transform: translateY(-100%); }
 }
 
 /* ====== Chatbot Button (Above Footer) ====== */
