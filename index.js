@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetSection) {
                 window.scrollTo({
-                    top: targetSection.offsetTop - 60,
+                    top: targetSection.offsetTop - 40,
                     behavior: "smooth"
                 });
             }
