@@ -110,7 +110,13 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    z-index:10;
+    
+}
+
+.notice-head {
+    background-color:white;
+    position: sticky;
+    z-index: 20;
 }
 
 .notice-line {
@@ -124,15 +130,15 @@ nav {
     height: 100px;
     overflow-y: auto;
     max-height: 120px;
-    padding-top:5px;
+    padding-top:10px;
     display: flex;
     flex-direction: column;
     animation: scrollUp 9s linear infinite;
 }
 
 @keyframes scrollUp {
-    10% { transform: translateY(0%); }
-    100% { transform: translateY(-120%); }
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
 }
 
 /* ====== Chatbot Button (Above Footer) ====== */
